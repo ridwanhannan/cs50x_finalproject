@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stats
+{% endblock %}
+
+{% block main %}
+
+<!-- For loop logic of jinja template -->
+
+
+
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Confirmed</th>
+            <th>Recovered</th>
+            <th>Critical</th>
+            <th>Deaths</th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr>
+            <td>{{name}}</td>
+            <td>{{confirmed }}</td>
+            <td>{{ recovered }}</td>
+            <td>{{ critical }}</td>
+            <td>{{ deaths  }} </td>
+          </tr>
+
+    </table>
+
+
+
+
+
+{% endblock %}
